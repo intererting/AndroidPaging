@@ -73,7 +73,7 @@ fun <Key, Value> DataSource.Factory<Key, Value>.toLiveData(
 fun Config(
     pageSize: Int,
     //提前多少个Item加载,当提前数量不足一页时，提前加载无效
-    prefetchDistance: Int = pageSize - 5,
+    prefetchDistance: Int = 5,
     enablePlaceholders: Boolean = true,
     initialLoadSizeHint: Int = pageSize * 1,
     maxSize: Int = PagedList.Config.MAX_SIZE_UNBOUNDED
